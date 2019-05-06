@@ -40,7 +40,10 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Equipos.findByPresupuesto", query = "SELECT e FROM Equipos e WHERE e.presupuesto = :presupuesto")
     , @NamedQuery(name = "Equipos.findByCiudad", query = "SELECT e FROM Equipos e WHERE e.ciudad = :ciudad")
     , @NamedQuery(name = "Equipos.findByEstadio", query = "SELECT e FROM Equipos e WHERE e.estadio = :estadio")
-    , @NamedQuery(name = "Equipos.findByN\u00bacampeonatos", query = "SELECT e FROM Equipos e WHERE e.n\u00bacampeonatos = :n\u00bacampeonatos")})
+    , @NamedQuery(name = "Equipos.findByN\u00bacampeonatos", query = "SELECT e FROM Equipos e WHERE e.n\u00bacampeonatos = :n\u00bacampeonatos")
+    , @NamedQuery(name = "Equipos.findByDivisi\u00f3n", query = "SELECT e FROM Equipos e WHERE e.divisi\u00f3n = :divisi\u00f3n")
+    , @NamedQuery(name = "Equipos.findByConferencia", query = "SELECT e FROM Equipos e WHERE e.conferencia = :conferencia")
+    , @NamedQuery(name = "Equipos.findByEscudo", query = "SELECT e FROM Equipos e WHERE e.escudo = :escudo")})
 public class Equipos implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -64,6 +67,12 @@ public class Equipos implements Serializable {
     private String estadio;
     @Column(name = "N\u00baCAMPEONATOS")
     private Short nºcampeonatos;
+    @Column(name = "DIVISI\u00d3N")
+    private String división;
+    @Column(name = "CONFERENCIA")
+    private String conferencia;
+    @Column(name = "ESCUDO")
+    private String escudo;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "equipo")
     private Collection<Jugadores> jugadoresCollection;
 
@@ -133,6 +142,30 @@ public class Equipos implements Serializable {
 
     public void setNºcampeonatos(Short nºcampeonatos) {
         this.nºcampeonatos = nºcampeonatos;
+    }
+
+    public String getDivisión() {
+        return división;
+    }
+
+    public void setDivisión(String división) {
+        this.división = división;
+    }
+
+    public String getConferencia() {
+        return conferencia;
+    }
+
+    public void setConferencia(String conferencia) {
+        this.conferencia = conferencia;
+    }
+
+    public String getEscudo() {
+        return escudo;
+    }
+
+    public void setEscudo(String escudo) {
+        this.escudo = escudo;
     }
 
     @XmlTransient

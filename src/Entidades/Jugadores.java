@@ -63,7 +63,7 @@ public class Jugadores implements Serializable {
     @Column(name = "APELLIDOS")
     private String apellidos;
     @Column(name = "N\u00baCAMISETA")
-    private Short nºcamiseta;
+    private String nºcamiseta;
     @Column(name = "POSICI\u00d3N")
     private String posición;
     @Column(name = "PA\u00cdS")
@@ -131,11 +131,11 @@ public class Jugadores implements Serializable {
         this.apellidos = apellidos;
     }
 
-    public Short getNºcamiseta() {
+    public String getNºcamiseta() {
         return nºcamiseta;
     }
 
-    public void setNºcamiseta(Short nºcamiseta) {
+    public void setNºcamiseta(String nºcamiseta) {
         this.nºcamiseta = nºcamiseta;
     }
 
