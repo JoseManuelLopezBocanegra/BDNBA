@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>Entidades.Equipos</class>
     <class>Entidades.Jugadores</class>
+    <class>nba.InsertarValores</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby:C:\Users\manul\Documents\Proyecto Java Base de Datos\NBA\BDNBA;create=true"/>
       <property name="javax.persistence.jdbc.user" value="APP"/>
