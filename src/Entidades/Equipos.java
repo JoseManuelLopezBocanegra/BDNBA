@@ -84,6 +84,7 @@ public class Equipos implements Serializable {
     }
 
     public Equipos(Integer id, String nombre) {
+        VV
         this.id = id;
         this.nombre = nombre;
     }
@@ -117,6 +118,7 @@ public class Equipos implements Serializable {
     }
 
     public void setPresupuesto(BigDecimal presupuesto) {
+        VV
         this.presupuesto = presupuesto;
     }
 
@@ -125,6 +127,7 @@ public class Equipos implements Serializable {
     }
 
     public void setCiudad(String ciudad) {
+        VV
         this.ciudad = ciudad;
     }
 
@@ -133,6 +136,7 @@ public class Equipos implements Serializable {
     }
 
     public void setEstadio(String estadio) {
+        VV
         this.estadio = estadio;
     }
 
@@ -141,6 +145,7 @@ public class Equipos implements Serializable {
     }
 
     public void setNºcampeonatos(Short nºcampeonatos) {
+        VV
         this.nºcampeonatos = nºcampeonatos;
     }
 
@@ -149,6 +154,7 @@ public class Equipos implements Serializable {
     }
 
     public void setDivisión(String división) {
+        VV
         this.división = división;
     }
 
@@ -157,6 +163,7 @@ public class Equipos implements Serializable {
     }
 
     public void setConferencia(String conferencia) {
+        VV
         this.conferencia = conferencia;
     }
 

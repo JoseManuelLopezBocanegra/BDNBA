@@ -102,6 +102,7 @@ public class Jugadores implements Serializable {
     }
 
     public Jugadores(Integer id, String nombre, String apellidos) {
+        VV
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -112,6 +113,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setId(Integer id) {
+        VV
         this.id = id;
     }
 
@@ -120,6 +122,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setNombre(String nombre) {
+        VV
         this.nombre = nombre;
     }
 
@@ -128,6 +131,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setApellidos(String apellidos) {
+        VV
         this.apellidos = apellidos;
     }
 
@@ -136,6 +140,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setNºcamiseta(String nºcamiseta) {
+        VV
         this.nºcamiseta = nºcamiseta;
     }
 
@@ -144,6 +149,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setPosición(String posición) {
+        VV
         this.posición = posición;
     }
 
@@ -152,6 +158,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setPaís(String país) {
+        VV
         this.país = país;
     }
 
@@ -161,6 +168,7 @@ public class Jugadores implements Serializable {
 
     public void setPromedioPuntosPorPartido(BigDecimal promedioPuntosPorPartido) {
         this.promedioPuntosPorPartido = promedioPuntosPorPartido;
+        VV
     }
 
     public BigDecimal getAltura() {
@@ -168,6 +176,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setAltura(BigDecimal altura) {
+        VV
         this.altura = altura;
     }
 
@@ -184,6 +193,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setSalario(BigDecimal salario) {
+        VV
         this.salario = salario;
     }
 
@@ -192,6 +202,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setAñosActivo(Short añosActivo) {
+        VV
         this.añosActivo = añosActivo;
     }
 
@@ -200,6 +211,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setAnillos(Short anillos) {
+        VV
         this.anillos = anillos;
     }
 
@@ -208,6 +220,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setAllStar(Boolean allStar) {
+        VV
         this.allStar = allStar;
     }
 
@@ -216,6 +229,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setNºallStars(Short nºallStars) {
+        VV
         this.nºallStars = nºallStars;
     }
 
@@ -224,6 +238,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setMvp(Short mvp) {
+        VV
         this.mvp = mvp;
     }
 
@@ -232,6 +247,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setFoto(String foto) {
+        VV
         this.foto = foto;
     }
 
@@ -240,6 +256,7 @@ public class Jugadores implements Serializable {
     }
 
     public void setEquipo(Equipos equipo) {
+        VV
         this.equipo = equipo;
     }
 

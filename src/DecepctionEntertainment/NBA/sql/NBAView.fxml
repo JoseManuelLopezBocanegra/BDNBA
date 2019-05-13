@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="1217.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DecepctionEntertainment.NBA.sql.NBAViewController">
+   <children>
+      <TableView layoutX="7.0" layoutY="7.0" prefHeight="490.0" prefWidth="1202.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Nombre" />
+          <TableColumn prefWidth="75.0" text="Apellidos" />
+            <TableColumn prefWidth="75.0" text="Equipo" />
+            <TableColumn prefWidth="75.0" text="Fecha Nacimiento" />
+            <TableColumn prefWidth="75.0" text="País" />
+            <TableColumn prefWidth="75.0" text="Posición" />
+            <TableColumn prefWidth="75.0" text="Nº Camiseta" />
+            <TableColumn prefWidth="75.0" text="PPP" />
+            <TableColumn prefWidth="75.0" text="Altura" />
+            <TableColumn prefWidth="75.0" text="Salario" />
+            <TableColumn prefWidth="75.0" text="Años Activo" />
+            <TableColumn prefWidth="75.0" text="Anillos" />
+            <TableColumn prefWidth="75.0" text="All Star" />
+            <TableColumn prefWidth="75.0" text="Nº All Star" />
+            <TableColumn prefWidth="75.0" text="MVP" />
+            <TableColumn prefWidth="75.0" text="Foto" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
