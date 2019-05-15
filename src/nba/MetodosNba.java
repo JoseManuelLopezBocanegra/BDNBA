@@ -2474,15 +2474,6 @@ public class MetodosNba {
         juga67.setMvp((short)0);
         juga68.setMvp((short)0);
     }
-        //Asignar fotografia a cada Jugador
-    public void FotoJugador () {
-        //jugador1.setFechaNacimiento();
-        
-    }
-        //Asignar fotografía a cada Equipo
-    public void FotoEquipo () {
-        //equipoAtlanta.setEscudo(escudo);
-    }
         // Conectar con la base de datos
     public void Transacción() {
         Map<String, String> emfProperties = new HashMap<String, String>();

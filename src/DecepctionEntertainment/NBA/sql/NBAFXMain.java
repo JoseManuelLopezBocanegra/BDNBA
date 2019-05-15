@@ -26,6 +26,7 @@ public class NBAFXMain extends Application {
     private EntityManagerFactory emf;
     private EntityManager em;
     
+    
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NBAView.fxml"));
@@ -34,11 +35,15 @@ public class NBAFXMain extends Application {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("NBAPU");
         EntityManager em = emf.createEntityManager();
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, 1140, 525);
         
         primaryStage.setTitle("NBA");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
+        NBAViewController NbaViewController = (NBAViewController) fxmlLoader.getController();                
+        NbaViewController.setEntityManager(em);
+        NbaViewController.CargarPersonas();
     }
 
     @Override
@@ -57,7 +62,7 @@ public class NBAFXMain extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        launch(args);
     }
     
 }

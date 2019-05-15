@@ -102,7 +102,6 @@ public class Jugadores implements Serializable {
     }
 
     public Jugadores(Integer id, String nombre, String apellidos) {
-        
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -113,7 +112,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setId(Integer id) {
-        
         this.id = id;
     }
 
@@ -122,7 +120,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setNombre(String nombre) {
-        
         this.nombre = nombre;
     }
 
@@ -131,7 +128,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setApellidos(String apellidos) {
-        
         this.apellidos = apellidos;
     }
 
@@ -140,7 +136,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setNºcamiseta(String nºcamiseta) {
-        
         this.nºcamiseta = nºcamiseta;
     }
 
@@ -149,7 +144,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setPosición(String posición) {
-        
         this.posición = posición;
     }
 
@@ -158,7 +152,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setPaís(String país) {
-        
         this.país = país;
     }
 
@@ -168,7 +161,6 @@ public class Jugadores implements Serializable {
 
     public void setPromedioPuntosPorPartido(BigDecimal promedioPuntosPorPartido) {
         this.promedioPuntosPorPartido = promedioPuntosPorPartido;
-        
     }
 
     public BigDecimal getAltura() {
@@ -176,7 +168,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setAltura(BigDecimal altura) {
-        
         this.altura = altura;
     }
 
@@ -193,7 +184,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setSalario(BigDecimal salario) {
-        
         this.salario = salario;
     }
 
@@ -202,7 +192,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setAñosActivo(Short añosActivo) {
-        
         this.añosActivo = añosActivo;
     }
 
@@ -211,7 +200,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setAnillos(Short anillos) {
-        
         this.anillos = anillos;
     }
 
@@ -220,7 +208,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setAllStar(Boolean allStar) {
-        
         this.allStar = allStar;
     }
 
@@ -229,7 +216,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setNºallStars(Short nºallStars) {
-        
         this.nºallStars = nºallStars;
     }
 
@@ -238,7 +224,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setMvp(Short mvp) {
-        
         this.mvp = mvp;
     }
 
@@ -247,7 +232,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setFoto(String foto) {
-        
         this.foto = foto;
     }
 
@@ -256,7 +240,6 @@ public class Jugadores implements Serializable {
     }
 
     public void setEquipo(Equipos equipo) {
-        
         this.equipo = equipo;
     }
 

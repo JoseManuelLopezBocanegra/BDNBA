@@ -125,7 +125,6 @@ public class Equipos implements Serializable {
     }
 
     public void setCiudad(String ciudad) {
-        
         this.ciudad = ciudad;
     }
 
@@ -134,7 +133,6 @@ public class Equipos implements Serializable {
     }
 
     public void setEstadio(String estadio) {
-        
         this.estadio = estadio;
     }
 
@@ -143,7 +141,6 @@ public class Equipos implements Serializable {
     }
 
     public void setNºcampeonatos(Short nºcampeonatos) {
-        
         this.nºcampeonatos = nºcampeonatos;
     }
 
@@ -152,7 +149,6 @@ public class Equipos implements Serializable {
     }
 
     public void setDivisión(String división) {
-        
         this.división = división;
     }
 
@@ -161,7 +157,6 @@ public class Equipos implements Serializable {
     }
 
     public void setConferencia(String conferencia) {
-        
         this.conferencia = conferencia;
     }
 
