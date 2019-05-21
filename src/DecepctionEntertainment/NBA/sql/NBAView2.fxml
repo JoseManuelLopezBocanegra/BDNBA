@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane id="AnchorPane" fx:id="rootDetalleView" prefHeight="720.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="DecepctionEntertainment.NBA.sql.NBAView2Controller">
+   <children>
+      <GridPane hgap="10.0" prefHeight="453.0" prefWidth="430.0" vgap="10.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="104.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="452.0" minWidth="10.0" prefWidth="316.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nombre:" />
+            <Label text="Apellidos:" GridPane.rowIndex="1" />
+            <Label text="Equipo:" GridPane.rowIndex="2" />
+            <Label text="Fecha Nacimiento:" GridPane.rowIndex="3" />
+            <Label text="País:" GridPane.rowIndex="4" />
+            <Label text="Posición:" GridPane.rowIndex="5" />
+            <Label text="Nº Camiseta:" GridPane.rowIndex="6" />
+            <Label text="Puntos Por Partido:" GridPane.rowIndex="7" />
+            <Label text="Altura:" GridPane.rowIndex="8" />
+            <Label text="Salario:" GridPane.rowIndex="9" />
+            <Label text="Años Activo:" GridPane.rowIndex="10" />
+            <Label text="Anillos:" GridPane.rowIndex="11" />
+            <Label text="All Star:" GridPane.rowIndex="12" />
+            <Label text="Nº All star:" GridPane.rowIndex="13" />
+            <Label text="MVP:" GridPane.rowIndex="14" />
+            <TextField fx:id="tfNombre" GridPane.columnIndex="1" />
+            <TextField fx:id="tfApellidos" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfEquipos" prefWidth="432.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfPais" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfCamiseta" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfPPP" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tfAltura" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="tfSalario" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="tfAñosActivo" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="tfAnillos" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="tfNAllStar" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="tfMvp" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <ComboBox fx:id="cbAllStar" prefHeight="25.0" prefWidth="292.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+            </ComboBox>
+            <DatePicker fx:id="dpFechaNacimiento" prefHeight="25.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="tfFoto" text="Foto:" GridPane.rowIndex="15" />
+            <HBox prefHeight="25.0" prefWidth="316.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <RadioButton fx:id="rbBase" mnemonicParsing="false" text="Base" />
+                  <RadioButton fx:id="rbEscolta" mnemonicParsing="false" text="Escolta" />
+                  <RadioButton fx:id="rbAlero" mnemonicParsing="false" text="Alero" />
+                  <RadioButton fx:id="rbAlaPivot" mnemonicParsing="false" text="Ala-Pívot" />
+                  <RadioButton fx:id="rbPivot" mnemonicParsing="false" text="Pívot" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <HBox layoutX="134.0" layoutY="514.0" prefHeight="171.0" prefWidth="316.0">
+         <children>
+            <ImageView fx:id="ivFoto" fitHeight="171.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Examinar" />
+         </children>
+      </HBox>
+      <Button fx:id="bCancelar" layoutX="478.0" layoutY="173.0" mnemonicParsing="false" onAction="#OnActionButtonCancelar" prefHeight="25.0" prefWidth="76.0" text="Cancelar" />
+      <Button fx:id="bGuardar" layoutX="478.0" layoutY="108.0" mnemonicParsing="false" onAction="#OnActionButtonguardar" prefHeight="25.0" prefWidth="76.0" text="Guardar" />
+   </children>
+</AnchorPane>

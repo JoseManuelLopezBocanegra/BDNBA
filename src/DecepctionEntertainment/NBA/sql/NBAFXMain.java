@@ -12,6 +12,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -29,13 +30,16 @@ public class NBAFXMain extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
+        StackPane rootMain = new StackPane();
+        
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NBAView.fxml"));
-        Parent root = fxmlLoader.load();
+        Parent rootNBAView = fxmlLoader.load();
+        rootMain.getChildren().add(rootNBAView);
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("NBAPU");
-        EntityManager em = emf.createEntityManager();
+        em = emf.createEntityManager();
         
-        Scene scene = new Scene(root, 1140, 525);
+        Scene scene = new Scene(rootMain, 1275, 625);
         
         primaryStage.setTitle("NBA");
         primaryStage.setScene(scene);
